@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,287 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVs-JC-Fv6">
+                                <rect key="frame" x="129" y="289" width="0.0" height="0.0"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kVI-w6-Bdj">
+                                <rect key="frame" x="7" y="362" width="320" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79R-Yu-NUJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="36"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Wrestling Coach">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.020532956710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="OSm-rb-k31" kind="show" id="fMg-gd-dCy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAe-jF-06P">
+                                        <rect key="frame" x="178" y="0.0" width="142" height="36"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="English Teacher">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="photoOfSelf" translatesAutoresizingMaskIntoConstraints="NO" id="Scm-H7-vEC">
+                                <rect key="frame" x="9" y="9" width="240" height="240"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="KgH-rk-dRf"/>
+                                    <constraint firstAttribute="height" constant="150" id="hq9-2W-sg6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="North Jersey Native" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LS-Mk-YAb">
+                                <rect key="frame" x="36" y="285" width="186" height="26"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Edward Suczewski" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ctN-jC-4va">
+                                <rect key="frame" x="38" y="260" width="183" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="29 years old" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2w-9H-mf5">
+                                <rect key="frame" x="71" y="319" width="116" height="26"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="BdP-Ca-FeY">
+                                <rect key="frame" x="7" y="401" width="203" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQO-TR-M4M">
+                                        <rect key="frame" x="0.0" y="0.0" width="41" height="36"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Poet">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ai1-ZS-FrI">
+                                        <rect key="frame" x="71" y="0.0" width="132" height="36"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Sumo Wrestler">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.02053295671066202" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DbS-Rf-blM" kind="show" id="jQm-Rv-pZV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kzp-0B-nS8">
+                                <rect key="frame" x="7" y="440" width="235" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73F-Rp-csP">
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="36"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Aspiring Sailor">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.020532956710000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="yLy-gs-Ema" kind="show" id="UIA-Qq-CJE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbD-iI-YSJ">
+                                        <rect key="frame" x="159" y="0.0" width="76" height="36"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Traveller">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BdP-Ca-FeY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="15A-og-wy2"/>
+                            <constraint firstItem="kzp-0B-nS8" firstAttribute="top" secondItem="BdP-Ca-FeY" secondAttribute="bottom" constant="10" id="1Ar-VR-KFh"/>
+                            <constraint firstItem="kVI-w6-Bdj" firstAttribute="top" secondItem="e2w-9H-mf5" secondAttribute="bottom" constant="20" id="3hs-pn-B4y"/>
+                            <constraint firstItem="BdP-Ca-FeY" firstAttribute="top" secondItem="kVI-w6-Bdj" secondAttribute="bottom" constant="10" id="669-1X-hwk"/>
+                            <constraint firstItem="BdP-Ca-FeY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7AV-gF-bI7"/>
+                            <constraint firstItem="ctN-jC-4va" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7oV-Kc-xtb"/>
+                            <constraint firstItem="e2w-9H-mf5" firstAttribute="top" secondItem="5LS-Mk-YAb" secondAttribute="bottom" constant="10" id="AfC-QN-15x"/>
+                            <constraint firstItem="5LS-Mk-YAb" firstAttribute="top" secondItem="ctN-jC-4va" secondAttribute="bottom" constant="10" id="EMU-GU-ZXQ"/>
+                            <constraint firstItem="ctN-jC-4va" firstAttribute="top" secondItem="Scm-H7-vEC" secondAttribute="bottom" constant="10" id="NuL-aU-WJq"/>
+                            <constraint firstItem="Scm-H7-vEC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P8X-KS-6bg"/>
+                            <constraint firstItem="kzp-0B-nS8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TBR-Hu-YI6"/>
+                            <constraint firstItem="e2w-9H-mf5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TYN-mD-8Jz"/>
+                            <constraint firstItem="5LS-Mk-YAb" firstAttribute="top" secondItem="ctN-jC-4va" secondAttribute="bottom" constant="10" id="YnB-VT-iCa"/>
+                            <constraint firstItem="5LS-Mk-YAb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bnG-gB-ZVs"/>
+                            <constraint firstItem="kzp-0B-nS8" firstAttribute="top" secondItem="BdP-Ca-FeY" secondAttribute="bottom" constant="10" id="gOg-EF-RHp"/>
+                            <constraint firstItem="e2w-9H-mf5" firstAttribute="top" secondItem="5LS-Mk-YAb" secondAttribute="bottom" constant="10" id="gzh-vZ-Odl"/>
+                            <constraint firstItem="kVI-w6-Bdj" firstAttribute="top" secondItem="e2w-9H-mf5" secondAttribute="bottom" constant="10" id="kKM-GC-k1N"/>
+                            <constraint firstItem="ctN-jC-4va" firstAttribute="top" secondItem="Scm-H7-vEC" secondAttribute="bottom" constant="10" id="q1A-nl-NzJ"/>
+                            <constraint firstItem="kVI-w6-Bdj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qLX-Uc-i2n"/>
+                            <constraint firstItem="BdP-Ca-FeY" firstAttribute="top" secondItem="kVI-w6-Bdj" secondAttribute="bottom" constant="10" id="snn-sS-aor"/>
+                            <constraint firstItem="kVI-w6-Bdj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xAP-0X-P0h"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="220" y="310"/>
+        </scene>
+        <!--Aspiring Sailor View Controller-->
+        <scene sceneID="0tZ-d9-1qm">
+            <objects>
+                <viewController id="yLy-gs-Ema" customClass="AspiringSailorViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QpX-Gs-U9z"/>
+                        <viewControllerLayoutGuide type="bottom" id="O2D-vB-91o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0A1-OA-2RK" customClass="Aspiring">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sailing" translatesAutoresizingMaskIntoConstraints="NO" id="vVy-zM-MuN">
+                                <rect key="frame" x="180" y="55" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="lEY-Ku-s8f"/>
+                                    <constraint firstAttribute="width" secondItem="vVy-zM-MuN" secondAttribute="height" multiplier="15:8" id="oDe-df-nxz"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwB-au-Qb4">
+                                <rect key="frame" x="274" y="191" width="52" height="30"/>
+                                <animations/>
+                                <state key="normal" title="dismiss"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="MBh-gA-jwc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TwB-au-Qb4" firstAttribute="centerX" secondItem="0A1-OA-2RK" secondAttribute="centerX" id="eGw-TE-cgr"/>
+                            <constraint firstItem="vVy-zM-MuN" firstAttribute="top" secondItem="QpX-Gs-U9z" secondAttribute="bottom" constant="35" id="epd-CC-M6p"/>
+                            <constraint firstItem="vVy-zM-MuN" firstAttribute="centerX" secondItem="0A1-OA-2RK" secondAttribute="centerX" id="gPW-YA-sVr"/>
+                            <constraint firstItem="TwB-au-Qb4" firstAttribute="top" secondItem="vVy-zM-MuN" secondAttribute="bottom" constant="10" id="qy0-CM-MeE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXy-ez-wgg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="1055"/>
+        </scene>
+        <!--Wrestling Coach View Controller-->
+        <scene sceneID="2Vz-v5-pBQ">
+            <objects>
+                <viewController id="OSm-rb-k31" customClass="WrestlingCoachViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BDd-6W-3gs"/>
+                        <viewControllerLayoutGuide type="bottom" id="3u8-Si-DId"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Yuk-pr-dDp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="wrestling" translatesAutoresizingMaskIntoConstraints="NO" id="aaL-6J-LcN">
+                                <rect key="frame" x="146" y="88" width="291" height="366"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aaL-6J-LcN" secondAttribute="height" multiplier="97:122" id="AOo-rm-IY9"/>
+                                    <constraint firstAttribute="width" constant="200" id="hel-n9-1jT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kbj-e6-7El">
+                                <rect key="frame" x="265" y="462" width="52" height="30"/>
+                                <animations/>
+                                <state key="normal" title="dismiss"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="3Si-rB-NzT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aaL-6J-LcN" firstAttribute="top" secondItem="BDd-6W-3gs" secondAttribute="bottom" constant="67" id="0W6-ma-adO"/>
+                            <constraint firstItem="Kbj-e6-7El" firstAttribute="centerX" secondItem="Yuk-pr-dDp" secondAttribute="centerX" id="2on-3D-rWD"/>
+                            <constraint firstItem="aaL-6J-LcN" firstAttribute="centerX" secondItem="Yuk-pr-dDp" secondAttribute="centerX" id="aGo-QV-drB"/>
+                            <constraint firstItem="Kbj-e6-7El" firstAttribute="top" secondItem="aaL-6J-LcN" secondAttribute="bottom" constant="10" id="fzV-Yd-cTI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YRw-Ry-Xcr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="-337"/>
+        </scene>
+        <!--Sumo Wrestler View Controller-->
+        <scene sceneID="4fR-sj-7RD">
+            <objects>
+                <viewController id="DbS-Rf-blM" customClass="SumoWrestlerViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Trc-o0-P1V"/>
+                        <viewControllerLayoutGuide type="bottom" id="ppw-5t-zS4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tJD-hZ-cOY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sumo" translatesAutoresizingMaskIntoConstraints="NO" id="zDI-ly-HC3">
+                                <rect key="frame" x="180" y="114" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zDI-ly-HC3" secondAttribute="height" multiplier="15:8" id="2YY-WR-ic8"/>
+                                    <constraint firstAttribute="width" constant="240" id="znl-Zc-tLG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O7y-Yh-IvO">
+                                <rect key="frame" x="274" y="250" width="52" height="30"/>
+                                <animations/>
+                                <state key="normal" title="dismiss"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="lBl-kZ-B07"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="O7y-Yh-IvO" firstAttribute="centerX" secondItem="tJD-hZ-cOY" secondAttribute="centerX" id="FdE-Be-7jU"/>
+                            <constraint firstItem="zDI-ly-HC3" firstAttribute="centerX" secondItem="tJD-hZ-cOY" secondAttribute="centerX" id="OjD-3C-Aem"/>
+                            <constraint firstItem="zDI-ly-HC3" firstAttribute="top" secondItem="Trc-o0-P1V" secondAttribute="bottom" constant="94" id="air-HU-Oi5"/>
+                            <constraint firstItem="O7y-Yh-IvO" firstAttribute="top" secondItem="zDI-ly-HC3" secondAttribute="bottom" constant="10" id="v0l-7z-KgZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ps9-FE-Sny" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="344"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="photoOfSelf" width="327" height="332"/>
+        <image name="sailing" width="600" height="400"/>
+        <image name="sumo" width="706" height="262"/>
+        <image name="wrestling" width="91" height="137"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="MBh-gA-jwc"/>
+    </inferredMetricsTieBreakers>
 </document>

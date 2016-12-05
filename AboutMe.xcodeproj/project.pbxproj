@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021A2BBB1BCCA05A004CC366 /* WrestlingCoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021A2BBA1BCCA05A004CC366 /* WrestlingCoachViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		021A2BBD1BCCA0B9004CC366 /* SumoWrestlerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021A2BBC1BCCA0B9004CC366 /* SumoWrestlerViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		021A2BBF1BCCA117004CC366 /* AspiringSailorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021A2BBE1BCCA117004CC366 /* AspiringSailorViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		68CC11501BB1AA4A003BDF43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CC114F1BB1AA4A003BDF43 /* AppDelegate.swift */; };
 		68CC11521BB1AA4A003BDF43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68CC11511BB1AA4A003BDF43 /* ViewController.swift */; };
 		68CC11551BB1AA4A003BDF43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68CC11531BB1AA4A003BDF43 /* Main.storyboard */; };
@@ -26,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		021A2BBA1BCCA05A004CC366 /* WrestlingCoachViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WrestlingCoachViewController.swift; sourceTree = "<group>"; };
+		021A2BBC1BCCA0B9004CC366 /* SumoWrestlerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SumoWrestlerViewController.swift; sourceTree = "<group>"; };
+		021A2BBE1BCCA117004CC366 /* AspiringSailorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspiringSailorViewController.swift; sourceTree = "<group>"; };
 		68CC114C1BB1AA4A003BDF43 /* AboutMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AboutMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68CC114F1BB1AA4A003BDF43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68CC11511BB1AA4A003BDF43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +85,9 @@
 			children = (
 				68CC114F1BB1AA4A003BDF43 /* AppDelegate.swift */,
 				68CC11511BB1AA4A003BDF43 /* ViewController.swift */,
+				021A2BBA1BCCA05A004CC366 /* WrestlingCoachViewController.swift */,
+				021A2BBC1BCCA0B9004CC366 /* SumoWrestlerViewController.swift */,
+				021A2BBE1BCCA117004CC366 /* AspiringSailorViewController.swift */,
 				68CC11531BB1AA4A003BDF43 /* Main.storyboard */,
 				68CC11561BB1AA4A003BDF43 /* Assets.xcassets */,
 				68CC11581BB1AA4A003BDF43 /* LaunchScreen.storyboard */,
@@ -145,6 +154,7 @@
 				TargetAttributes = {
 					68CC114B1BB1AA4A003BDF43 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = 596S62XU5D;
 					};
 					68CC115F1BB1AA4A003BDF43 = {
 						CreatedOnToolsVersion = 7.0;
@@ -196,7 +206,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				021A2BBD1BCCA0B9004CC366 /* SumoWrestlerViewController.swift in Sources */,
+				021A2BBF1BCCA117004CC366 /* AspiringSailorViewController.swift in Sources */,
 				68CC11521BB1AA4A003BDF43 /* ViewController.swift in Sources */,
+				021A2BBB1BCCA05A004CC366 /* WrestlingCoachViewController.swift in Sources */,
 				68CC11501BB1AA4A003BDF43 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,10 +339,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AboutMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devmtn.AboutMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -337,10 +353,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = AboutMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.devmtn.AboutMe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -387,6 +406,7 @@
 				68CC116B1BB1AA4A003BDF43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68CC116C1BB1AA4A003BDF43 /* Build configuration list for PBXNativeTarget "AboutMeTests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +415,7 @@
 				68CC116E1BB1AA4A003BDF43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
